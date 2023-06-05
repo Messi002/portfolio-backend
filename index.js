@@ -3,7 +3,6 @@ const app = express();
 const mongoose = require('mongoose');
 const { MONGO_DB_CONFIG } = require("./config/app.config");
 const cors = require('cors');
-const serverless = require("serverless-http");
 
 // Connection to MongoDB
 mongoose.connect(MONGO_DB_CONFIG.DB, {
@@ -26,13 +25,13 @@ app.use(cors());
 app.use(express.json());
 
 // Define a route to fetch the data
-app.use('/.netlify/functions/api', require("../router/app.route"));
+app.use('/api', require("./router/app.route"));
 
-module.exports.handler = serverless(app);
+
 
 
 
 // Start the server
-// app.listen(8000, () => {
-//   console.log('Server started on port 8000');
-// });
+app.listen(8000, () => {
+  console.log('Server started on port 8000');
+});

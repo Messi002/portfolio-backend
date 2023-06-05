@@ -1,7 +1,7 @@
 # dependencies
 /node_modules
 .env
-functions
+
 
 
 # # Local Netlify folder
