@@ -35,3 +35,19 @@ app.use('/api', require("./router/app.route"));
 app.listen(8000, () => {
   console.log('Server started on port 8000');
 });
+
+
+
+
+// {
+  // "version" : 2,
+//   "build" : [
+//       
+//       {"src": "*.js", "use": "@vercel/node"},
+//   ],
+//
+//   "routes": [
+//     { "src": "/(.*)", "dest": "/" }
+//   ]
+// 
+// }
