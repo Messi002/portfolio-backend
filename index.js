@@ -39,15 +39,3 @@ app.listen(8000, () => {
 
 
 
-// {
-  // "version" : 2,
-//   "build" : [
-//       
-//       {"src": "*.js", "use": "@vercel/node"},
-//   ],
-//
-//   "routes": [
-//     { "src": "/(.*)", "dest": "/" }
-//   ]
-// 
-// }
