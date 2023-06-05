@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const { MONGO_DB_CONFIG } = require("../config/app.config");
+const { MONGO_DB_CONFIG } = require("./config/app.config");
 const cors = require('cors');
 const serverless = require("serverless-http");
 
@@ -33,6 +33,6 @@ module.exports.handler = serverless(app);
 
 
 // Start the server
-app.listen(8000, () => {
-  console.log('Server started on port 8000');
-});
+// app.listen(8000, () => {
+//   console.log('Server started on port 8000');
+// });

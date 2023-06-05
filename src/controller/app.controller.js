@@ -1,5 +1,5 @@
-const { portfolioSchema } = require('../model/portfolio_model');
-const { testimonialModel } = require('../model/testimonial_model');
+const { portfolioSchema } = require('../src/model/portfolio_model');
+const { testimonialModel } = require('../src/model/testimonial_model');
 
 
 exports.portfolioAppRoute = async (req, res) => {
