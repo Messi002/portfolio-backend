@@ -26,7 +26,7 @@ exports.testimonialRoute = async (req, res) => {
     return res.status(200).send({
       message: "Success",
       data: items
-    })
+    });
 
 
   } catch (error) {
