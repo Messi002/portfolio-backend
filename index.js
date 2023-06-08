@@ -18,7 +18,14 @@ mongoose.connect(MONGO_DB_CONFIG.DB, {
   });
 
 
+// Enable CORS
+app.use(cors());
 
+// Middleware to parse JSON data
+app.use(express.json());
+
+// Define a route to fetch the data
+app.use('/api', require("./router/app.route"));
 
 
 
