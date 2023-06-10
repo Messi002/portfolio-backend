@@ -5,7 +5,3 @@ const router = express.Router();
 
 
 router.get('/portfolio', portfolioController.portfolioAppRoute);
-router.get('/testimonial', testimonialController.testimonialRoute);
-
-
-module.exports = router;
